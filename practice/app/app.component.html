@@ -1,0 +1,99 @@
+<!-- <h1>new practice program {{title}}</h1>
+ 
+ hi welcome {{title}} -->
+<br> 
+<!-- //String interpollation -->
+<!-- {{title}}
+{{title}} -->
+<br>
+<br>
+<!-- event binding
+<input id="vignesh" (change)="print($event)" value="vignesh"/>
+<br> -->
+
+<br>
+
+
+
+
+<!-- the target value is taken to the child component in this example after pressing the buton the value is passed to the childcomp -->
+
+<input id="new" #event placeholder="enter name"/>
+<button (click)="print(event)">add</button>
+
+
+
+
+
+<!-- property binding 
+ <input [value]="newtitle">
+<br>
+<br> -->
+
+<!-- twoway binding 
+<input id="v" [(ngModel)]="title"/> -->
+
+<!-- <div [ngStyle]="{'color':'green'}"> new world</div>
+<div [ngStyle]="{'color':'blue'}">angular project</div>
+
+ <button (click)="loadtest()">check</button>
+<br><br> 
+
+<button (click)="loadlogin()">login</button> -->
+ <!-- {{count}} -->
+<!-- <button (click)="increasecount()">+</button>
+<button (click)="decreasecount()">-</button>
+
+<li><a class="nav-link" routerLink= "/child" routerLinkActive="active" >childaccess</a></li> -->
+<!-- 
+<mat-slider min="1" max="100" step="1" value="50"></mat-slider> -->
+<!-- <mat-checkbox>Check </mat-checkbox>
+<br><br>
+<mat-form-field class="col-12"> <input matInput placeholder="Name" value="Tudip"> </mat-form-field>
+<br>
+<br> -->
+<!-- <button mat-raised-button color="primary" (click)="loadtest()">Click it</button>
+<br> 
+<button mat-icon-button color="primary" (click)="loadtest()">Click it</button> -->
+<!-- <br>
+<mat-card>Material Card</mat-card> -->
+ <!-- {{details}} -->
+<!-- {{details | json}} -->
+<!-- <div class="container mt-5">
+    <h2>loading jason data in the table example</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>userId</th>
+                <th>id</th>
+                <th>title</th>
+                <th>completed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let detail of details">
+                <td>{{detail.userId}}</td>
+                <td>{{detail.id}}</td>
+                <td>{{detail.title}}</td>
+                <td>{{detail.completed}}</td>
+                <button class="addbtn" (click)="loadlogin()">Add</button>
+                
+                <button class="newbttn" (click)="loadlogin()">remove</button>
+            </tr>
+        </tbody>
+    </table>
+</div> -->
+
+<!-- <app-login></app-login>  -->
+<!-- <app-menubar></app-menubar> -->
+
+
+<!-- passing the value to the child component -->
+{{countnew}}
+<br>
+<br>
+
+<app-newchild [childmessage]="title" (countervaluechanged)="updatecount($event)"></app-newchild>
+
+
+<router-outlet></router-outlet>

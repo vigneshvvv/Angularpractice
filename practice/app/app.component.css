@@ -1,0 +1,14 @@
+.newbttn{
+    background-color: red;
+    color: white;
+    border-radius: 20%;
+    align-items: center;
+    border-left: 20px;
+    
+}
+.addbtn{
+    background-color: rgb(45, 235, 219);
+    border-right: 20px;
+    
+
+}

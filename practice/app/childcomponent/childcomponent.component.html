@@ -1,0 +1,70 @@
+  <!-- <p>childcomponent works right now!</p>
+<h1> Date pipe example</h1>
+<div>{{date | date :'dd-mm-yyyy'}}</div>
+
+<h1>String pipe example</h1>
+<div>{{myname | lowercase}}</div>
+<div>{{myname| uppercase}}</div>
+
+ <h1>number pipe example</h1>
+<div>{{mynumber | number: '1.1-2'}}</div>
+
+<h1>example for currency pipe</h1>
+<div>{{mycurrency | currency: 'USD'}}</div> 
+
+ <h3>example for jsonpipe</h3>
+<div>{{obj | json}} {{arr}}</div>
+
+<h3> keyvalue pipe</h3>
+<div>{{obj | keyvalue | json}}</div>
+
+<h3>custom pipe testing</h3>
+<div>{{'testing' | append:'custompipe'}}</div>
+
+<div *ngFor="let user of users | filter: 'age' : '20'" >
+    {{user.Name}}{{user.age}}
+</div>
+
+
+<input [(ngModel)]="value" #userInput/>{{value}}
+<button (click)="adduser(userInput.value)">Add</button> 
+
+<div *ngIf="users">
+    users are available
+</div>
+ 
+<div *ngIf="users; then useravailable; else nouseravailable"></div>
+<ng-template #useravailable>
+    <div *ngFor="let obj of users">
+        <div>
+            {{obj.Name}}{{obj.age}}
+        </div>
+    </div>
+    
+    </ng-template>
+<ng-template #nouseravailable> the userss are not available</ng-template> 
+
+<div *ngIf="users; then useravailable; else nouseravailable"></div>
+<ng-template #useravailable>
+    <div *ngFor="let obj of users">
+        <div [ngSwitch] = "obj.age">
+            <div *ngSwitchCase="20">
+                {{obj.Name}}
+            </div>
+        </div>
+    </div>
+</ng-template>
+<ng-template #nouseravailable>
+    no user available
+</ng-template>  -->
+
+<!-- <ul *ngFor="let obj of users">
+    <li [ngClass]="{'text-success' :obj.age == '20','text-danger' :obj.age == '10'}">
+        {{obj.Name}} {{obj.age}}
+    </li>
+</ul> -->
+{{nameofinput}}
+    
+
+
+
