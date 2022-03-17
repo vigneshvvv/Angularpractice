@@ -1,0 +1,28 @@
+.card{
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    align-items: center;
+    background-image: "./img.jpg";
+}
+
+
+
+
+.form-group{
+    align-items: center;
+    width: 300px;
+    justify-content: center;
+    padding-top: 30px;
+    
+    
+}
+.btn.btn-primary    {
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 100px;
+
+}

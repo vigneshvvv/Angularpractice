@@ -1,0 +1,25 @@
+
+<div class="container mt-5">
+    <h2>loading jason data in the table example</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>userId</th>
+                <th>id</th>
+                <th>title</th>
+                <th>completed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let detail of details">
+                <td>{{detail.userId}}</td>
+                <td>{{detail.id}}</td>
+                <td>{{detail.title}}</td>
+                <td>{{detail.completed}}</td>
+                <button class="addbtn" >Add</button>
+                
+                <button class="newbttn" >remove</button>
+            </tr>
+        </tbody>
+    </table>
+</div>
